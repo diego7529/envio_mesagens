@@ -15,7 +15,7 @@ def horario_comercial():
 contacts = pd.read_excel('numeros.xlsx')
 mensagem_inicial = ""
 
-video_path = "C:\\Projects\\python\\envios_mensagem\\video_teste.mp4"
+#video_path = "C:\\Projects\\python\\envios_mensagem\\video_teste.mp4"
 
 workbook = load_workbook('numeros.xlsx')
 sheet = workbook.active
@@ -29,7 +29,7 @@ for index, row in contacts.iterrows():
 
     numero = row['Número']
     mensagem = row['Mensagem']
-    #video_path = row['Video']
+    video_path = row['Video']
     verificacao = row['Enviado']
 
     if pd.isnull(numero):
